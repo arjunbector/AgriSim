@@ -4,6 +4,7 @@ use app::index;
 
 mod app;
 mod database;
+mod models;
 
 #[rocket::main]
 async fn main() -> Result<(), rocket::Error> {
