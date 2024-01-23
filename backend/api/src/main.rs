@@ -3,6 +3,7 @@ use app::index;
 #[macro_use] extern crate rocket;
 
 mod app;
+mod database;
 
 #[rocket::main]
 async fn main() -> Result<(), rocket::Error> {
