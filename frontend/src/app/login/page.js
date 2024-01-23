@@ -69,7 +69,7 @@ export default function Login() {
               router.push("/") ;
             }}
           >
-            Login
+            Sign in
           </button>
           </div>
         )}
