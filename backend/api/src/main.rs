@@ -6,6 +6,7 @@ use app::sensor::sensor_data;
 mod app;
 mod database;
 mod models;
+mod utility;
 
 #[rocket::main]
 async fn main() -> Result<(), rocket::Error> {
