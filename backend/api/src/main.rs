@@ -1,4 +1,5 @@
 use app::index;
+use app::sensor::sensor_data;
 
 #[macro_use] extern crate rocket;
 
@@ -12,6 +13,7 @@ async fn main() -> Result<(), rocket::Error> {
         
         // <-------- ROUTES --------->
         .mount("/", routes![index])
+        .mount("/api/v1/sensor/", routes![sensor_data])
 
 
         // launching
